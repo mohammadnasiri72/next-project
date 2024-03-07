@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+    font-family: Pacifico;
+    src: url("../../public/font/fr13631857_Blacksword.otf") ;
+}
+
+.homePage{
+    background-image: url('../../public/images/bg1-1.jpg');
+}
