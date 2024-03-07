@@ -6,7 +6,12 @@
     font-family: Pacifico;
     src: url("../../public/font/fr13631857_Blacksword.otf") ;
 }
-
+.text-last-center{
+    text-align-last: center;
+}
 .homePage{
     background-image: url('../../public/images/bg1-1.jpg');
+}
+.box-img1-welcome{
+    background-image: url('./../../public/images/v-1.webp');
 }

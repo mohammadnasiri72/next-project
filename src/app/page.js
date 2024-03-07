@@ -1,9 +1,12 @@
-import HomePage from "@/component/template/home/home";
+import MainPage from "@/component/template/mainPage/mainPage";
+import Welcome from "@/component/template/welcome/welcome";
+
 
 export default function Home() {
   return (
    <>
-    <HomePage />
+    <MainPage />
+    <Welcome />
    </>
   )
 }
