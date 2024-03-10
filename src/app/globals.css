@@ -18,3 +18,19 @@
 .box-img2-welcome{
     background-image: url('./../../public/images/v-2.webp');
 }
+.test:hover .box-title{
+    transform: translateY(-40%);
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.test:hover .box-price{
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+}
+.test:hover .box-add-to-cart{
+    top: 10%;
+    opacity: 1;
+    visibility: visible;
+}

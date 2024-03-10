@@ -55,11 +55,10 @@ export default function Header() {
           >
             BLOG
           </Link>
-          <Link
+          <div
             onMouseEnter={() => setDropDownMenuItem(true)}
             onMouseLeave={() => setDropDownMenuItem(false)}
-            className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300 relative h-full flex items-center"
-            href={"./"}
+            className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300 relative h-full flex items-center cursor-pointer"
           >
             <span className="flex justify-center items-center">
               SHOP
@@ -104,7 +103,7 @@ export default function Header() {
                 Vegetable
               </Link>
             </div>
-          </Link>
+          </div>
           <Link
             className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
             href={"./"}

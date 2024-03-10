@@ -44,14 +44,15 @@ export default function Welcome() {
         </div>
       </div>
       <div className="flex justify-center items-center px-20 mt-20">
-      <Link
+        <Link
           href={"./"}
           className="box-img2-welcome h-[50vh] w-1/2 mx-5 bg-cover bg-blend-multiply bg-[#0005] duration-500 hover:bg-[#000c] text-white flex justify-center flex-col px-20"
         >
-          <p className="font-semibold text-5xl"><span className="text-8xl">20</span>% OFF</p>
+          <p className="font-semibold text-5xl">
+            <span className="text-8xl">20</span>% OFF
+          </p>
           <p className="text-6xl font-semibold">FARMER</p>
           <p className="text-6xl font-semibold">PRODUCTS</p>
-         
         </Link>
         <Link
           className="box-img1-welcome h-[50vh] w-1/2 mx-5 bg-cover bg-blend-multiply bg-[#0005] duration-500 hover:bg-[#000c] text-white flex justify-center flex-col px-20"
@@ -65,7 +66,6 @@ export default function Welcome() {
             <FaAngleRight />
           </p>
         </Link>
-        
       </div>
     </>
   );
