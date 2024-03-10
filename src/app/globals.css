@@ -34,3 +34,9 @@
     opacity: 1;
     visibility: visible;
 }
+/* footer */
+.footer{
+    background-image: url('./../../public/images/footer-widgets-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

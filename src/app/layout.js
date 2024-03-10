@@ -2,6 +2,7 @@
 
 import Header from "@/component/mudole/header/header";
 import "./globals.css";
+import Footer from "@/component/mudole/footer/footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
