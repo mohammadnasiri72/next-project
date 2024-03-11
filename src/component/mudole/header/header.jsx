@@ -1,25 +1,61 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { FaAngleDown } from "react-icons/fa6";
+import { FaAngleDown, FaAngleRight } from "react-icons/fa6";
 import { SlBasket } from "react-icons/sl";
+import { IoMenuOutline } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 export default function Header() {
+  const [showMenu, setShowMenu] = useState(false);
+  const [showOverMenu, setShowOverMenu] = useState(false);
   const [dropDownMenuItem, setDropDownMenuItem] = useState(false);
+  const showMenuHandler = () => {
+    setShowMenu(true);
+    document.body.style.overflowY = "hidden";
+  };
+  const closeMenuHandler = () => {
+    setShowMenu(false);
+    setShowOverMenu(false);
+    document.body.style.overflowY = "auto";
+  };
+  const showOverMenuHandler = () => {
+    setShowOverMenu(!showOverMenu);
+  };
+
   return (
     <>
-      <div className="w-full h-16 bg-[#679509] flex justify-between items-center px-10 text-white">
+      <div className="w-full h-16 bg-[#679509] flex md:justify-between justify-center items-center px-10 text-white">
         <div>
-          <p>
+          <p className="text-center">
             Last sale up to <span className="font-bold">20%</span> OFF. Use code
             “<span className="font-bold">SALE70</span>”.
           </p>
         </div>
-        <div className="flex justify-center items-center">
-          <Link className="hover:text-slate-300 duration-300 mx-1 px-3 border-r" href={"./"}>Compare</Link>
-          <Link className="hover:text-slate-300 duration-300 mx-1 px-3 border-r" href={"./"}>Wishlist</Link>
-          <Link className="hover:text-slate-300 duration-300 mx-1 px-3 border-r" href={"./"}>Login</Link>
-          <Link className="hover:text-slate-300 duration-300 flex justify-center items-center mx-1 px-3" href={"./"}>
+        <div className="justify-center items-center md:flex hidden">
+          <Link
+            className="hover:text-slate-300 duration-300 mx-1 px-3 border-r"
+            href={"./"}
+          >
+            Compare
+          </Link>
+          <Link
+            className="hover:text-slate-300 duration-300 mx-1 px-3 border-r"
+            href={"./"}
+          >
+            Wishlist
+          </Link>
+          <Link
+            className="hover:text-slate-300 duration-300 mx-1 px-3 border-r"
+            href={"./"}
+          >
+            Login
+          </Link>
+          <Link
+            className="hover:text-slate-300 duration-300 flex justify-center items-center mx-1 px-3"
+            href={"./"}
+          >
             <SlBasket className="mx-1" />
             <span className="mx-1">Cart</span>
             <span className="mx-1">0</span>
@@ -30,7 +66,7 @@ export default function Header() {
         <div>
           <img src="./images/logo.webp" alt="logo" />
         </div>
-        <div className="flex justify-center items-center h-full">
+        <div className="justify-center items-center h-full md:flex hidden">
           <Link
             className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
             href={"./"}
@@ -111,6 +147,115 @@ export default function Header() {
             CONTACTS
           </Link>
         </div>
+        <div className="md:hidden block z-50">
+          <IoMenuOutline
+            style={{ display: showMenu ? "none" : "inline" }}
+            onClick={showMenuHandler}
+            className="text-3xl cursor-pointer text-[#679509]"
+          />
+          {/* <IoMdClose style={{display:showMenu?'inline':'none'}} onClick={closeMenuHandler} className="text-3xl cursor-pointer text-[#679509]"/> */}
+        </div>
+        <div
+          style={{
+            transform: showMenu ? "translateX(0)" : "translateX(-110%)",
+            top: scrollY + "px",
+          }}
+          className="md:hidden block shadow-2xl bg-white w-1/2 h-screen absolute left-0 duration-300 z-50"
+        >
+          <div className="flex flex-col items-center relative">
+            <IoMdClose
+              className="absolute right-4 top-3 cursor-pointer text-3xl hover:text-[#679509] duration-300"
+              onClick={closeMenuHandler}
+            />
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold mt-10"
+              href={"./"}
+            >
+              HOME
+            </Link>
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
+              href={"./"}
+            >
+              ABOUT
+            </Link>
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
+              href={"./"}
+            >
+              TEAM
+            </Link>
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
+              href={"./"}
+            >
+              BLOG
+            </Link>
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold flex justify-center items-center"
+              href={"./"}
+              onClick={showOverMenuHandler}
+            >
+              SHOP
+              <FaAngleRight />
+            </Link>
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
+              href={"./"}
+            >
+              CONTACTS
+            </Link>
+          </div>
+        </div>
+        <div
+          style={{
+            transform: showOverMenu ? "translateX(0)" : "translateX(-110%)",
+            top: scrollY + "px",
+          }}
+          className="md:hidden block shadow-2xl bg-white w-1/2 h-screen absolute left-0 top-0 duration-300 z-50"
+        >
+          <div className="flex flex-col items-center relative">
+            <FaArrowLeftLong
+              className="absolute right-4 top-3 cursor-pointer text-3xl hover:text-[#679509] duration-300"
+              onClick={showOverMenuHandler}
+            />
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold mt-10"
+              href={"./"}
+            >
+              Baking
+            </Link>
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
+              href={"./"}
+            >
+              Fruit
+            </Link>
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
+              href={"./"}
+            >
+              Organic
+            </Link>
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
+              href={"./"}
+            >
+              Packaged Meals
+            </Link>
+            <Link
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
+              href={"./"}
+            >
+              Vegetable
+            </Link>
+          </div>
+        </div>
+        <div
+          style={{ display: showMenu ? "block" : "none" }}
+          className="md:hidden block fixed top-0 left-0 bottom-0 right-0 bg-[#0008]"
+          onClick={closeMenuHandler}
+        ></div>
       </div>
     </>
   );

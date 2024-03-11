@@ -34,9 +34,10 @@
     opacity: 1;
     visibility: visible;
 }
+.shop{
+    background-image: url('./../../public/images/banners2.jpg');
+}
 /* footer */
 .footer{
     background-image: url('./../../public/images/footer-widgets-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }

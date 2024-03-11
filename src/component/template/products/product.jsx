@@ -19,40 +19,40 @@ export default function Product({ product }) {
           Our Products
         </h2>
       </div>
-      <div className="flex justify-center mt-5">
+      <div className="flex flex-wrap justify-center mt-5">
         <button
           style={{ color: isActive[0] ? "#679509" : "rgb(71 85 105)" }}
-          className="mx-3 px-3 text-slate-600 font-semibold hover:text-[#679509] duration-300 hover:text-lg"
+          className="mx-3 px-3 text-slate-600 font-semibold hover:text-[#679509] duration-300 hover:text-lg md:w-auto w-full whitespace-nowrap"
           onClick={() => activeHandler(0)}
         >
           NEW ARRIVALS
         </button>
         <button
           style={{ color: isActive[1] ? "#679509" : "rgb(71 85 105)" }}
-          className="mx-3 px-3 text-slate-600 font-semibold hover:text-[#679509] duration-300 hover:text-lg"
+          className="mx-3 px-3 text-slate-600 font-semibold hover:text-[#679509] duration-300 hover:text-lg md:w-auto w-full whitespace-nowrap"
           onClick={() => activeHandler(1)}
         >
           ORGANIC & NATURAL
         </button>
         <button
           style={{ color: isActive[2] ? "#679509" : "rgb(71 85 105)" }}
-          className="mx-3 px-3 text-slate-600 font-semibold hover:text-[#679509] duration-300 hover:text-lg"
+          className="mx-3 px-3 text-slate-600 font-semibold hover:text-[#679509] duration-300 hover:text-lg md:w-auto w-full whitespace-nowrap"
           onClick={() => activeHandler(2)}
         >
           THE FARM STORY
         </button>
         <button
           style={{ color: isActive[3] ? "#679509" : "rgb(71 85 105)" }}
-          className="mx-3 px-3 text-slate-600 font-semibold hover:text-[#679509] duration-300 hover:text-lg"
+          className="mx-3 px-3 text-slate-600 font-semibold hover:text-[#679509] duration-300 hover:text-lg md:w-auto w-full whitespace-nowrap"
           onClick={() => activeHandler(3)}
         >
           PLUM CAKE
         </button>
       </div>
-      <div className="flex justify-center mt-5 flex-wrap">
+      <div className="flex flex-wrap justify-center mt-5 flex-wrap">
         {product.slice(0,8).map((e, i) => {
           return (
-            <div key={e._id} className="w-1/5 mx-4 test relative cursor-pointer">
+            <div key={e._id} className="lg:w-1/5 sm:w-1/3 w-full mx-4 test relative cursor-pointer">
               <img className="border z-20" src={e.img} alt="" />
               <div className="text-center pb-10 pt-2 relative overflow-hidden">
                 <h3 className="whitespace-nowrap duration-100 box-title text-[#679509]">

@@ -3,6 +3,7 @@ import Product from "@/component/template/products/product";
 import Welcome from "@/component/template/welcome/welcome";
 import productModel from '../models/product'
 import connectToDb from "@/utils/db";
+import Shop from "@/component/template/shop/shop";
 
 export default async function Home({data}) {
   connectToDb()
@@ -12,6 +13,7 @@ export default async function Home({data}) {
     <MainPage />
     <Welcome />
     <Product product={product}/>
+    <Shop />
    </>
   )
 }

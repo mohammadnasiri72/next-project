@@ -8,7 +8,7 @@ import { AiOutlineMail } from "react-icons/ai";
 export default function Footer() {
   return (
     <>
-      <div className="footer py-10">
+      <div className="footer py-10 bg-no-repeat bg-cover">
         <div className="flex flex-wrap justify-center items-start md:px-32 px-10 mt-36">
           <div className="lg:w-1/4 sm:w-1/2 w-full flex flex-col justify-center items-start mt-10">
             <h4 className="font-[Pacifico] text-3xl mb-5">Categories</h4>

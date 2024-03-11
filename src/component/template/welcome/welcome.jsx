@@ -6,14 +6,14 @@ export default function Welcome() {
   return (
     <>
       <div className="flex justify-center items-center mt-10">
-        <p className="text-[#679509] font-[Pacifico] text-5xl font-semibold">
+        <p className="text-[#679509] font-[Pacifico] text-5xl font-semibold text-center">
           Welcome to our healthy farm!
         </p>
       </div>
-      <div className="flex justify-center items-center px-10">
-        <div className="flex items-center flex-col w-1/3 mx-5">
+      <div className="flex flex-wrap justify-center items-stretch px-10">
+        <div className="flex items-center flex-col md:w-1/4 w-full mx-5 mt-10 md:mt-5">
           <img src="./images/1.webp" alt="" />
-          <p className="font-[Pacifico] text-2xl font-semibold text-slate-600 mt-5">
+          <p className="font-[Pacifico] text-2xl font-semibold text-slate-600 mt-5 whitespace-nowrap">
             Best Quality Products
           </p>
           <p className="text-slate-600 text-justify text-last-center mt-5">
@@ -22,9 +22,9 @@ export default function Welcome() {
             clients.
           </p>
         </div>
-        <div className="flex items-center flex-col w-1/3 mx-5">
+        <div className="flex items-center flex-col md:w-1/4 w-full mx-5 mt-5">
           <img src="./images/2.webp" alt="" />
-          <p className="font-[Pacifico] text-2xl font-semibold text-slate-600 mt-5">
+          <p className="font-[Pacifico] text-2xl font-semibold text-slate-600 mt-5 whitespace-nowrap">
             Farmer Products
           </p>
           <p className="text-slate-600 text-justify text-last-center mt-5">
@@ -32,9 +32,9 @@ export default function Welcome() {
             with love and care with no GMO or pesticides.
           </p>
         </div>
-        <div className="flex items-center flex-col w-1/3 mx-5">
+        <div className="flex items-center flex-col md:w-1/4 w-full mx-5 mt-5">
           <img src="./images/3.webp" alt="" />
-          <p className="font-[Pacifico] text-2xl font-semibold text-slate-600 mt-5">
+          <p className="font-[Pacifico] text-2xl font-semibold text-slate-600 mt-5 whitespace-nowrap">
             Fast Delivery
           </p>
           <p className="text-slate-600 text-justify text-last-center mt-5">
@@ -43,24 +43,24 @@ export default function Welcome() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center px-20 mt-20">
+      <div className="flex flex-wrap justify-center items-center px-20 mt-20">
         <Link
           href={"./"}
-          className="box-img2-welcome h-[50vh] w-1/2 mx-5 bg-cover bg-blend-multiply bg-[#0005] duration-500 hover:bg-[#000c] text-white flex justify-center flex-col px-20"
+          className="box-img2-welcome h-[50vh] lg:w-5/12 w-full mt-5 mx-5 bg-cover bg-blend-multiply bg-[#0005] duration-500 hover:bg-[#000c] text-white flex justify-center flex-col lg:px-10 px-5"
         >
-          <p className="font-semibold text-5xl">
-            <span className="text-8xl">20</span>% OFF
+          <p className="font-semibold sm:text-5xl text-2xl whitespace-nowrap">
+            <span className="sm:text-8xl text-2xl">20</span>% OFF
           </p>
-          <p className="text-6xl font-semibold">FARMER</p>
-          <p className="text-6xl font-semibold">PRODUCTS</p>
+          <p className="sm:text-6xl text-2xl font-semibold">FARMER</p>
+          <p className="sm:text-6xl text-2xl font-semibold">PRODUCTS</p>
         </Link>
         <Link
-          className="box-img1-welcome h-[50vh] w-1/2 mx-5 bg-cover bg-blend-multiply bg-[#0005] duration-500 hover:bg-[#000c] text-white flex justify-center flex-col px-20"
+          className="box-img1-welcome h-[50vh] lg:w-5/12 w-full mt-5 mx-5 bg-cover bg-blend-multiply bg-[#0005] duration-500 hover:bg-[#000c] text-white flex justify-center flex-col lg:px-10 px-5"
           href={"./"}
         >
           <p className="font-semibold text-xl">ENJOY SEASONAL DEALS</p>
-          <p className="text-6xl font-semibold">NEW</p>
-          <p className="text-6xl font-semibold">ESSENTIALS</p>
+          <p className="sm:text-6xl text-2xl font-semibold">NEW</p>
+          <p className="sm:text-6xl text-2xl font-semibold">ESSENTIALS</p>
           <p className="flex items-center mt-3">
             <span className="underline">SEE ALL PRODUCTS</span>
             <FaAngleRight />
