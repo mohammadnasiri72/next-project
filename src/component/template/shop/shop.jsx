@@ -3,7 +3,7 @@ import React from "react";
 export default function Shop() {
   return (
     <>
-      <div className="shop lg:h-screen h-full bg-cover bg-no-repeat bg-center flex items-center flex-col pb-36">
+      <div className="shop lg:h-screen h-full bg-cover bg-no-repeat bg-center flex items-center flex-col pb-36 min-h-96">
         <h1 className="text-6xl font-semibold text-slate-700 mt-36 text-center">
           Fruits and Vegetables
         </h1>

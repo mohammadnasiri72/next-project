@@ -3,7 +3,7 @@ import React from "react";
 export default function MainPage() {
   return (
     <>
-      <div className="homePage lg:h-screen bg-cover p-20">
+      <div className="homePage lg:h-screen bg-cover p-20 min-h-96">
         <div>
           <p className="text-7xl font-semibold text-slate-600">Green Leaves</p>
           <p className="text-7xl font-semibold text-slate-600">

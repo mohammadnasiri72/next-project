@@ -46,7 +46,7 @@ export default function Welcome() {
       <div className="flex flex-wrap justify-center items-center px-20 mt-20">
         <Link
           href={"./"}
-          className="box-img2-welcome h-[50vh] lg:w-5/12 w-full mt-5 mx-5 bg-cover bg-blend-multiply bg-[#0005] duration-500 hover:bg-[#000c] text-white flex justify-center flex-col lg:px-10 px-5"
+          className="box-img2-welcome h-[50vh] lg:w-5/12 w-full mt-5 mx-5 bg-cover bg-blend-multiply bg-[#0005] min-h-80 duration-500 hover:bg-[#000c] text-white flex justify-center flex-col lg:px-10 px-5"
         >
           <p className="font-semibold sm:text-5xl text-2xl whitespace-nowrap">
             <span className="sm:text-8xl text-2xl">20</span>% OFF
@@ -55,7 +55,7 @@ export default function Welcome() {
           <p className="sm:text-6xl text-2xl font-semibold">PRODUCTS</p>
         </Link>
         <Link
-          className="box-img1-welcome h-[50vh] lg:w-5/12 w-full mt-5 mx-5 bg-cover bg-blend-multiply bg-[#0005] duration-500 hover:bg-[#000c] text-white flex justify-center flex-col lg:px-10 px-5"
+          className="box-img1-welcome h-[50vh] lg:w-5/12 w-full mt-5 mx-5 bg-cover bg-blend-multiply bg-[#0005] min-h-80 duration-500 hover:bg-[#000c] text-white flex justify-center flex-col lg:px-10 px-5"
           href={"./"}
         >
           <p className="font-semibold text-xl">ENJOY SEASONAL DEALS</p>
