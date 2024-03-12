@@ -75,7 +75,7 @@ export default function Header() {
           </Link>
           <Link
             className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
-            href={"./"}
+            href={"./about"}
           >
             ABOUT
           </Link>
@@ -173,7 +173,7 @@ export default function Header() {
             </Link>
             <Link
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
-              href={"./"}
+              href={"./about"}
             >
               ABOUT
             </Link>
