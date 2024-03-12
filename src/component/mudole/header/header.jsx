@@ -153,14 +153,12 @@ export default function Header() {
             onClick={showMenuHandler}
             className="text-3xl cursor-pointer text-[#679509]"
           />
-          {/* <IoMdClose style={{display:showMenu?'inline':'none'}} onClick={closeMenuHandler} className="text-3xl cursor-pointer text-[#679509]"/> */}
         </div>
         <div
           style={{
             transform: showMenu ? "translateX(0)" : "translateX(-110%)",
-            top: scrollY + "px",
           }}
-          className="md:hidden block shadow-2xl bg-white w-1/2 h-screen absolute left-0 duration-300 z-50"
+          className="md:hidden block shadow-2xl bg-white w-1/2 h-screen fixed left-0 top-0 duration-300 z-50"
         >
           <div className="flex flex-col items-center relative">
             <IoMdClose
@@ -210,9 +208,8 @@ export default function Header() {
         <div
           style={{
             transform: showOverMenu ? "translateX(0)" : "translateX(-110%)",
-            top: scrollY + "px",
           }}
-          className="md:hidden block shadow-2xl bg-white w-1/2 h-screen absolute left-0 top-0 duration-300 z-50"
+          className="md:hidden block shadow-2xl bg-white w-1/2 h-screen fixed left-0 top-0 duration-300 z-50"
         >
           <div className="flex flex-col items-center relative">
             <FaArrowLeftLong
