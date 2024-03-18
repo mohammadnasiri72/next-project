@@ -52,7 +52,7 @@ export default function Product({ product }) {
       <div className="flex flex-wrap justify-center mt-5 flex-wrap">
         {product.slice(0,8).map((e, i) => {
           return (
-            <div key={e._id} className="lg:w-1/5 sm:w-1/3 w-full mx-4 test relative cursor-pointer">
+            <div key={e._id} className="lg:w-1/5 sm:w-1/3 w-full mx-4 card-product relative cursor-pointer">
               <img className="border z-20" src={e.img} alt="" />
               <div className="text-center pb-10 pt-2 relative overflow-hidden">
                 <h3 className="whitespace-nowrap duration-100 box-title text-[#679509]">

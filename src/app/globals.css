@@ -6,8 +6,12 @@
     font-family: Pacifico;
     src: url("../../public/font/fr13631857_Blacksword.otf") ;
 } 
+*{
+    margin-left: 0;
+    margin-right: 0;
+}
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 .text-last-center{
     text-align-last: center;
@@ -21,18 +25,18 @@ body{
 .box-img2-welcome{
     background-image: url('./../../public/images/v-2.webp');
 }
-.test:hover .box-title{
+.card-product:hover .box-title{
     transform: translateY(-40%);
     opacity: 0;
     visibility: hidden;
     
 }
-.test:hover .box-price{
+.card-product:hover .box-price{
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
 }
-.test:hover .box-add-to-cart{
+.card-product:hover .box-add-to-cart{
     top: 10%;
     opacity: 1;
     visibility: visible;
@@ -42,7 +46,6 @@ body{
 }
 .box-slider-home-page{
     background-image: url('./../../public/images/bg5.jpg');
-    padding-bottom: 50px !important;
 }
 /* swiper */
 
@@ -72,4 +75,9 @@ body{
 /* footer */
 .footer{
     background-image: url('./../../public/images/footer-widgets-bg.jpg');
+}
+/* about */
+.bg-main-about{
+    background-image: url('./../../public/images/post6.jpg');
+    background-position: bottom;
 }

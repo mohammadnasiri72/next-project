@@ -35,58 +35,58 @@ export default function Header() {
         </div>
         <div className="justify-center items-center md:flex hidden">
           <Link
-            className="hover:text-slate-300 duration-300 mx-1 px-3 border-r"
+            className="hover:text-slate-300 duration-300  px-3 border-r"
             href={"./"}
           >
             Compare
           </Link>
           <Link
-            className="hover:text-slate-300 duration-300 mx-1 px-3 border-r"
+            className="hover:text-slate-300 duration-300 px-3 border-r"
             href={"./"}
           >
             Wishlist
           </Link>
           <Link
-            className="hover:text-slate-300 duration-300 mx-1 px-3 border-r"
+            className="hover:text-slate-300 duration-300 px-3 border-r"
             href={"./"}
           >
             Login
           </Link>
           <Link
-            className="hover:text-slate-300 duration-300 flex justify-center items-center mx-1 px-3"
+            className="hover:text-slate-300 duration-300 flex justify-center items-center px-3"
             href={"./"}
           >
-            <SlBasket className="mx-1" />
-            <span className="mx-1">Cart</span>
-            <span className="mx-1">0</span>
+            <SlBasket className="" />
+            <span className="px-1">Cart</span>
+            <span className="px-1">0</span>
           </Link>
         </div>
       </div>
-      <div className="w-full h-24 bg-white flex justify-between items-center px-20 border">
+      <div className="w-full h-24 bg-white flex justify-between items-center lg:px-20 sm:px-8 px-4 border">
         <div>
           <img src="./images/logo.webp" alt="logo" />
         </div>
         <div className="justify-center items-center h-full md:flex hidden">
           <Link
-            className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
+            className="px-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
             href={"./"}
           >
             HOME
           </Link>
           <Link
-            className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
+            className="px-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
             href={"./about"}
           >
             ABOUT
           </Link>
           <Link
-            className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
+            className="px-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
             href={"./"}
           >
             TEAM
           </Link>
           <Link
-            className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
+            className="px-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
             href={"./"}
           >
             BLOG
@@ -94,7 +94,7 @@ export default function Header() {
           <div
             onMouseEnter={() => setDropDownMenuItem(true)}
             onMouseLeave={() => setDropDownMenuItem(false)}
-            className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300 relative h-full flex items-center cursor-pointer"
+            className="px-3 text-slate-500 font-semibold hover:text-[#679509] duration-300 relative h-full flex items-center cursor-pointer"
           >
             <span className="flex justify-center items-center">
               SHOP
@@ -106,7 +106,7 @@ export default function Header() {
                 visibility: dropDownMenuItem ? "visible" : "hidden",
                 top: dropDownMenuItem ? "4.5rem" : "4rem",
               }}
-              className="bg-white shadow-xl w-48 h-52 absolute right-0 translate-x-1/2 duration-300 flex items-center flex-col"
+              className="bg-white shadow-xl w-48 h-52 absolute right-0 translate-x-1/3 duration-300 flex items-center flex-col"
             >
               <Link
                 className="text-slate-500 p-1 m-1 hover:text-[#679509] duration-300"
@@ -141,7 +141,7 @@ export default function Header() {
             </div>
           </div>
           <Link
-            className="mx-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
+            className="px-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
             href={"./"}
           >
             CONTACTS
@@ -166,24 +166,28 @@ export default function Header() {
               onClick={closeMenuHandler}
             />
             <Link
+              onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold mt-10"
               href={"./"}
             >
               HOME
             </Link>
             <Link
+              onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
               href={"./about"}
             >
               ABOUT
             </Link>
             <Link
+              onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
               href={"./"}
             >
               TEAM
             </Link>
             <Link
+              onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
               href={"./"}
             >
@@ -198,6 +202,7 @@ export default function Header() {
               <FaAngleRight />
             </Link>
             <Link
+              onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
               href={"./"}
             >
@@ -217,30 +222,35 @@ export default function Header() {
               onClick={showOverMenuHandler}
             />
             <Link
+              onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold mt-10"
               href={"./"}
             >
               Baking
             </Link>
             <Link
+              onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
               href={"./"}
             >
               Fruit
             </Link>
             <Link
+              onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
               href={"./"}
             >
               Organic
             </Link>
             <Link
+              onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
               href={"./"}
             >
               Packaged Meals
             </Link>
             <Link
+              onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
               href={"./"}
             >
