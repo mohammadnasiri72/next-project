@@ -81,3 +81,14 @@ body{
     background-image: url('./../../public/images/post6.jpg');
     background-position: bottom;
 }
+/* team */
+.box-desc:hover .desc{
+    height: 100%;
+}
+.box-attachment-team{
+    background-image: url("./../../public/images/blog-1.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+}

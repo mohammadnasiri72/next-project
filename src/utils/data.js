@@ -21,3 +21,10 @@ product =
         "role": "Customer",
         "group": "Tim Diaz"
     }
+    team=
+    {
+        "name" : "Don Clark",
+        "char" : "PM",
+        "desc" : "Don was born Los Angeles. His family owned a small grocery store, so he has learned how to manage shop",
+        "img" : "images/team1.jpg"
+    }
