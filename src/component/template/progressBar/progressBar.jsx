@@ -5,7 +5,7 @@ export default function ProgressBar() {
   const [widthFarmer, setWidthFarmer] = useState(0);
   const [widthFast, setWidthFast] = useState(0);
   const refPrpgress = useRef(null);
-  const scrollHandler = () => {
+  const scrollProgressHandler = () => {
     if (scrollY > refPrpgress.current.offsetTop - window.innerHeight + 50) {
       setWidthBest(90);
       setWidthFarmer(80);
@@ -18,8 +18,8 @@ export default function ProgressBar() {
     }
   };
   useEffect(() => {
-    window.addEventListener("scroll", scrollHandler);
-    return () => window.removeEventListener("scroll", scrollHandler);
+    window.addEventListener("scroll", scrollProgressHandler);
+    return () => window.removeEventListener("scroll", scrollProgressHandler);
   }, []);
   return (
     <>
