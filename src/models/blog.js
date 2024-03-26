@@ -13,6 +13,10 @@ const schema = mongoose.Schema({
     type: String,
     required: true,
   },
+  desc: {
+    type: String,
+    required: true,
+  }
 });
 
 const blogModel = mongoose.models.Blog || mongoose.model("Blog", schema);

@@ -10,7 +10,7 @@ import Testimonials from "@/component/template/Testimonials/Testimonials";
 import testimonialsModel from "@/models/testimonials";
 import NewsLetters from "@/component/template/newsLetters/newsLetters";
 
-export default async function Home({data}) {
+export default async function Home() {
   connectToDb()
   const product = await productModel.find({})
   const blog = await blogModel.find({})
