@@ -142,7 +142,7 @@ export default function Header() {
           </div>
           <Link
             className="px-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
-            href={"./"}
+            href={"./contact"}
           >
             CONTACTS
           </Link>
@@ -204,7 +204,7 @@ export default function Header() {
             <Link
               onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
-              href={"./"}
+              href={"./contact"}
             >
               CONTACTS
             </Link>
