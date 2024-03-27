@@ -96,10 +96,10 @@ export default function Header() {
             onMouseLeave={() => setDropDownMenuItem(false)}
             className="px-3 text-slate-500 font-semibold hover:text-[#679509] duration-300 relative h-full flex items-center cursor-pointer"
           >
-            <span className="flex justify-center items-center">
+            <Link href={'./product'} className="flex justify-center items-center">
               SHOP
               <FaAngleDown />
-            </span>
+            </Link>
             <div
               style={{
                 opacity: dropDownMenuItem ? "1" : "0",
@@ -193,14 +193,13 @@ export default function Header() {
             >
               BLOG
             </Link>
-            <Link
-              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold flex justify-center items-center"
-              href={"./"}
+            <div
+              className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold flex justify-center items-center cursor-pointer"
               onClick={showOverMenuHandler}
             >
               SHOP
               <FaAngleRight />
-            </Link>
+            </div>
             <Link
               onClick={closeMenuHandler}
               className="my-2 hover:text-[#679509] duration-300 text-xl text-slate-700 font-semibold"
