@@ -31,9 +31,13 @@ const schema = mongoose.Schema({
   category: {
     type: String,
     required: true,
+  },
+  number: {
+    type: String,
+    required: true,
   }
 });
 
-const productModel = mongoose.models.Product || mongoose.model("Product" , schema )
+const cartModel = mongoose.models.Cart || mongoose.model("Cart" , schema )
 
-export default productModel;
+export default cartModel;

@@ -12,6 +12,7 @@
 }
 body{
     overflow-x: hidden !important;
+    scroll-behavior: smooth;
 }
 .text-last-center{
     text-align-last: center;
@@ -91,4 +92,9 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-position: right;
+}
+/* product */
+.number-page:hover{
+background-color: #679509 !important;
+color: white !important;
 }

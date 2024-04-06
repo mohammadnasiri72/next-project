@@ -6,6 +6,7 @@ import { SlBasket } from "react-icons/sl";
 import { IoMenuOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import Image from "next/image";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -64,12 +65,13 @@ export default function Header() {
       </div>
       <div className="w-full h-24 bg-white flex justify-between items-center lg:px-20 sm:px-8 px-4 border">
         <div>
-          <img src="./images/logo.webp" alt="logo" />
+          {/* <img src="./images/logo.webp" alt="logo" /> */}
+          <Image alt="logo" src={"/images/logo.webp"} width={150} height={100}/>
         </div>
         <div className="justify-center items-center h-full md:flex hidden">
           <Link
             className="px-3 text-slate-500 font-semibold hover:text-[#679509] duration-300"
-            href={"./"}
+            href={"/"}
           >
             HOME
           </Link>
@@ -96,7 +98,7 @@ export default function Header() {
             onMouseLeave={() => setDropDownMenuItem(false)}
             className="px-3 text-slate-500 font-semibold hover:text-[#679509] duration-300 relative h-full flex items-center cursor-pointer"
           >
-            <Link href={'./product'} className="flex justify-center items-center">
+            <Link href={'/products'} className="flex justify-center items-center">
               SHOP
               <FaAngleDown />
             </Link>
@@ -110,7 +112,7 @@ export default function Header() {
             >
               <Link
                 className="text-slate-500 p-1 m-1 hover:text-[#679509] duration-300"
-                href={"./"}
+                href={"/products"}
               >
                 Baking
               </Link>
